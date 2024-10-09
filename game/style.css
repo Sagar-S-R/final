@@ -1,0 +1,96 @@
+body{
+    background-image: url("/imagesRPS/background3.jpg");
+}
+/* Add a black background color to the top navigation */
+.navbar {
+    border-radius: 5px;
+    background-color: rgb(27, 75, 62);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar .searchGames{
+    background-color: #ded4d4;
+    border: 2px solid rgb(40, 38, 38);
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    padding-inline: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.games{
+    margin:30px;
+    display: flex;
+    gap:21px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.gameCard{
+    width : 150px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(27, 75, 62);
+    position: relative;
+    transition: all 0.5s ease;
+}
+.gameCard img{
+    width : 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.gameCard h1{
+    font-size: large;
+    color: #ddd;
+}
+.gameCard:hover > .playbutton{
+    top: 125px;
+    opacity:1;
+}
+.gameCard:hover{
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+
+.playbutton{
+    width:28px;
+    height:28px;
+    background-color:rgb(27, 75, 62);
+    border-radius: 58%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    right:20px;
+    opacity:0;
+    transition: all 0.5s ease-out;
+}
+.playbutton:hover{
+    cursor: pointer;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}

@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+.sgap{
+    gap: 20px;
+}
+.brad{
+    border-radius: 10%;
+}
+.js{
+    justify-content: center;
+}
+.al{
+    align-items: center;
+}
+.mg{
+    margin: 25px;
+}
+.jarou{
+    justify-content: space-around;
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track (the area where the scrollbar is) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* You can change this to any color you want */
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* You can change this to any color you want */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* You can change this to any color you want */
+  }
+  
